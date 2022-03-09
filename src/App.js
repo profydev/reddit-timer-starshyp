@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './assets/GlobalStyle';
 import theme from './assets/theme';
@@ -14,10 +14,12 @@ function App() {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="search" element={<Search />} />
-        </Routes>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="search" element={<Search />} />
+          </Routes>
+        </BrowserRouter>
       </ThemeProvider>
     </>
   );
