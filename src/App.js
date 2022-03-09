@@ -1,10 +1,23 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
+import GlobalStyle from './assets/GlobalStyle';
+import theme from './assets/theme';
+import Home from './pages/Home';
+import Search from './pages/Search';
 
 function App() {
   return (
-    <div>
-      App Placeholder
-    </div>
+    <>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <h1>Reddit Timer</h1>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='search' element={<Search />} />
+        </Routes>
+      </ThemeProvider>
+    </>
   );
 }
 
