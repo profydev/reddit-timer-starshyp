@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+//  prettier-ignore
 
-const Home = () => {
-  return (
-    <>
-      <Link to='/search'>Search</Link>
-    </>
-  );
-};
+const Home = () => (
+  <>
+    <Link to="/search">Search</Link>
+  </>
+);
 
 export default Home;

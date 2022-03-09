@@ -11,10 +11,11 @@ WebFont.load({
   },
 });
 
+//  prettier-ignore
 // eslint-disable-next-line react/jsx-filename-extension
 ReactDOM.render(
   <BrowserRouter>
     <App />
   </BrowserRouter>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
