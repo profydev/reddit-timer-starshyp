@@ -11,9 +11,9 @@ const Header = () => (
         <img src={Logo} alt="logo" />
       </Link>
       <NavContainer>
-        <Link to="/search">Search</Link>
-        <Link to="/how-it-works">How it works</Link>
-        <Link to="/about">About</Link>
+        <Link to="/search/javascript">Search</Link>
+        <Link to="/#how-it-works">How it works</Link>
+        <Link to="/#about">About</Link>
       </NavContainer>
     </HeaderContainer>
   </>

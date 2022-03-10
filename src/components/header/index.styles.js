@@ -16,7 +16,6 @@ export const NavContainer = styled.nav`
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1.625rem;
-  /* margin-left: 20rem; */
   a {
     text-decoration: none;
     color: ${(props) => props.theme.color.text};

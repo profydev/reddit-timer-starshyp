@@ -7,7 +7,7 @@ import App from '../../App';
 describe('Header', () => {
   test('"Search" link points to the correct page', () => {
     render(<App />);
-    const link = screen.getByRole('link', { name: /search/i });
+    const link = screen.getAllByRole('link', { name: /search/i })[0];
     userEvent.click(link);
     expect(link).toBeInTheDocument();
   });
