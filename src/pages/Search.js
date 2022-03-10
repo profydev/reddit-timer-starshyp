@@ -1,10 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 //  prettier-ignore
 
 const Search = () => (
   <>
-    <Link to="/">Home</Link>
+    <input type="text" placeholder="javascript" value="Search" />
   </>
 );
 
