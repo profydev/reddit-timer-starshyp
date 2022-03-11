@@ -5,7 +5,7 @@ import GlobalStyle from './assets/GlobalStyle';
 import theme from './assets/theme';
 import Home from './pages/Home';
 import Search from './pages/Search';
-import Header from './components/Header';
+import Header from './components/header';
 //  prettier-ignore
 
 function App() {
@@ -13,11 +13,11 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <Header />
         <BrowserRouter>
+          <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="search" element={<Search />} />
+            <Route path="search/:term" element={<Search />} />
           </Routes>
         </BrowserRouter>
       </ThemeProvider>
