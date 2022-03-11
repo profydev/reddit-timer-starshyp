@@ -7,7 +7,7 @@ import App from '../../App';
 describe('Footer', () => {
   test('"Profy" link points to the correct page', () => {
     render(<App />);
-    const link = screen.getAllByRole('link', { name: 'Profy' })[0];
+    const link = screen.getAllByRole('link', { name: 'Profy.dev/employers' })[0];
     userEvent.click(link);
     expect(link).toBeInTheDocument();
   });
