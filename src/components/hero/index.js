@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import Heatmap from '../../assets/heatmap.png';
 //  prettier-ignore
 
 const Hero = () => {
@@ -16,7 +15,6 @@ const Hero = () => {
         <button type="button">SHOW ME THE BEST TIME</button>
       </Link>
       <input type="text" placeholder="Search..." defaultValue={params.term} />
-      <image src={Heatmap} alt="heatmap" />
     </>
   );
 };
