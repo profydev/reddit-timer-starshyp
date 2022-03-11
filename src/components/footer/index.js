@@ -8,7 +8,7 @@ const Footer = () => (
   <>
     <StyledFooterContainer>
       <a href="https://profy.dev/employers" target="_blank" rel="noreferrer">
-        Profy.dev/employers
+        profy.dev/employers
       </a>
       <Link to="/">
         <img src={FooterLogo} alt="footer logo" />
