@@ -6,6 +6,7 @@ import theme from './assets/theme';
 import Home from './pages/Home';
 import Search from './pages/Search';
 import Header from './components/header';
+import Footer from './components/footer';
 //  prettier-ignore
 
 function App() {
@@ -17,8 +18,10 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="search/:term" element={<Search />} />
+            <Route path="/search/:term" element={<Search />} />
+            <Route path="/terms" element={<Home />} />
           </Routes>
+          <Footer />
         </BrowserRouter>
       </ThemeProvider>
     </>
