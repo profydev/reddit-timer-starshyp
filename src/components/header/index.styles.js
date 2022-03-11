@@ -5,9 +5,12 @@ export const StyledHeaderContainer = styled.header`
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 1.5rem 5rem;
-  max-width: 100vw;
+  padding: 0 5rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 90rem;
   height: 6.25rem;
+  margin-top: 8px;
 `;
 
 export const StyledNavContainer = styled.nav`
@@ -16,6 +19,7 @@ export const StyledNavContainer = styled.nav`
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1.625rem;
+  margin-left: 1.625rem;
   a {
     text-decoration: none;
     color: ${(props) => props.theme.color.text};
