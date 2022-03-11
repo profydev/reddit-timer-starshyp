@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const HeaderContainer = styled.header`
+export const StyledHeaderContainer = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,7 +10,7 @@ export const HeaderContainer = styled.header`
   height: 6.25rem;
 `;
 
-export const NavContainer = styled.nav`
+export const StyledNavContainer = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
