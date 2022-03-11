@@ -7,13 +7,20 @@ import FooterLogo from '../../assets/footer-logo.svg';
 const Footer = () => (
   <>
     <StyledFooterContainer>
-      <a href="https://profy.dev/employers" target="_blank" rel="noreferrer">
+      <a
+        href="https://profy.dev/employers"
+        target="_blank"
+        rel="noreferrer"
+        style={{ flex: '1', textAlign: 'left' }}
+      >
         profy.dev/employers
       </a>
       <Link to="/">
         <img src={FooterLogo} alt="footer logo" />
       </Link>
-      <Link to="/terms">Terms & Privacy</Link>
+      <Link to="/terms" style={{ flex: '1', textAlign: 'right' }}>
+        Terms & Privacy
+      </Link>
     </StyledFooterContainer>
   </>
 );
